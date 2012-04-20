@@ -1,7 +1,9 @@
+scalaVersion := "2.9.1"
+
 // for Akka plugin
 resolvers += "Typesafe Repo" at "http://repo.typesafe.com/typesafe/releases/"
 
-addSbtPlugin("com.typesafe.akka" % "akka-sbt-plugin" % "2.0")
+addSbtPlugin("com.typesafe.akka" % "akka-sbt-plugin" % "2.0.1")
 
 //// for eclipse plugin
 //resolvers += Classpaths.typesafeResolver
@@ -22,3 +24,4 @@ addSbtPlugin("org.scalaxb" % "sbt-scalaxb" % "0.7.0")
 
 //// for dependency graph plugin
 addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.5.2")
+
