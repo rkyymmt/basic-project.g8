@@ -1,3 +1,5 @@
+import ScalaxbKeys._
+
 name := "$name$"
 
 organization := "$organization$"
@@ -11,3 +13,10 @@ libraryDependencies := Seq(
 )
 
 initialCommands := "import $organization$.$name$._"
+
+//// for Scalaxb
+seq(scalaxbSettings: _*)
+
+libraryDependencies ++= Seq(
+  "net.databinder" %% "dispatch-http" % "0.8.8" % "compile->default" withSources()
+)
